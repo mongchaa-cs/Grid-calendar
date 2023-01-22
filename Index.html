@@ -4,57 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Simple A Grid Calendar</title>
-
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        }
-        .container {
-            margin: 20px auto;
-            background-color: azure;
-            text-align: center;
-            padding: 20px;
-            border: #ddd solid 2px;
-        }
-        
-        .container > h1 {
-            margin: 0.6em 0;
-        }
-
-        .calendar {
-            height: 500px;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: 3em repeat(5, 1fr);
-            gap: 1em;
-            /* padding: 20px;
-            justify-items: center; */
-        }
-
-        .calendar > .date {
-            display: flex;
-            justify-content: center; /*Horizontally center*/
-            align-items: center; /*Vertically center*/
-            background-color: lightslategray;
-            font-size: 1.3em;
-            border-radius: 10px;
-        }
-
-        .calendar > .day {
-            color: white;
-            font-size: 1.2em;
-            font-weight: 700;
-            letter-spacing: 1.2px;
-            background-color: rgb(189, 189, 77);
-        }
-        .calendar > .other-month {
-            font-size: 1.1em;
-            background-color: darkgrey;
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
